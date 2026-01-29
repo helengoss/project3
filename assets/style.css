@@ -39,6 +39,11 @@ h1 {
   text-align: centre;
 }
 
+h2 {
+  color: var(--background-primary);
+  text-align: centre;
+}
+
 
 /* card resizing restricting smallest size */
 
