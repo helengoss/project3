@@ -1,0 +1,67 @@
+
+
+/* variables for colour control */
+
+:root {
+  --primary-color: #e2601a;
+  --secondary-color: #560a7c;
+  --background-primary: #e4ac11;
+  --background-light: #f2f2f2;
+  --blockquote-text: #ccc;
+  --text-dark: #333333;
+  --white: #ffffff;
+  --black: #000;
+}
+
+/* Image */
+img {
+  border-radius: 5px;
+  border: 3px solid var(--primary-color);
+}
+
+/* Header */
+header {
+  padding: 60px;
+  text-align: center;
+  background: var(--background-primary);
+  color: var(--primary-color)
+}
+
+/* Main */
+main {
+  background-color: var(--primary-color);
+  padding: 5px;
+  text-align: center;
+}
+
+h1 {
+  color: var(--primary-color);
+  text-align: centre;
+}
+
+
+/* card resizing restricting smallest size */
+
+.card {
+  min-width: 240px;
+  background-color: var(--background-primary);
+  padding: 5px;
+  text-align: center;
+}
+
+.card-img-top {
+  height: 160px;
+  object-fit: cover;
+}
+
+@media (min-width: 992px) {
+  .card {
+    min-width: 240px;
+  }
+}
+
+@media (min-width: 992px) {
+  .card-img-top {
+    height: 160px;
+  }
+}
