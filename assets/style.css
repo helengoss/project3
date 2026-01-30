@@ -27,6 +27,15 @@ header {
   color: var(--primary-color)
 }
 
+/* makes header text reduce in size for smaller screens */
+
+header h1 {
+  font-size: 2rem;
+  word-wrap: break-word;
+  white-space: normal;
+  line-height: 1.2;       
+}
+
 /* Main */
 main {
   background-color: var(--primary-color);
@@ -45,13 +54,23 @@ h2 {
 }
 
 
+
+
+
+@media (max-width: 576px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+}
 /* card resizing restricting smallest size */
 
 .card {
-  min-width: 240px;
+  width: 270px;                /* shrink-wrap around image */
+  min-width: 240px;            /* don’t shrink below this on tiny screens */
   background-color: var(--background-primary);
   padding: 5px;
   text-align: center;
+  margin-bottom: 1rem;         /* spacing between rows */
 }
 
 .card-img-top {
@@ -68,5 +87,23 @@ h2 {
 @media (min-width: 992px) {
   .card-img-top {
     height: 160px;
+  }
+}
+
+/* responsive header */
+
+@media (min-width: 992px) {
+  .header {
+    height: 160px;
+  }
+}
+
+@media (max-width: 375px) {
+  .card {
+    width: 90%;  /* slightly smaller than viewport */
+  }
+  .fixed-img {
+    width: 100%;
+    height: auto;
   }
 }
